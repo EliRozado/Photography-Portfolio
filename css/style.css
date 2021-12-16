@@ -1,0 +1,46 @@
+*{padding:0; margin:0;}
+
+body{ background-color: rgb(248,249,250); color: black;}
+
+.navbar-collapse{
+    justify-content: flex-end;
+}
+
+.carousel, .carousel-item{
+    height: 500px;
+    overflow: hidden;
+}
+
+.carousel-item img{
+    height:100%;
+    object-fit: cover;
+}
+
+.gallery img{
+    opacity: 1;
+    transition: opacity 300ms;
+}
+
+.gallery img:hover{
+    opacity: 0.7;
+}
+
+.image-cont{
+    height: 200px;
+}
+
+.image-cont img{
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 768px){
+    .carousel, .carousel-item{
+        height: 300px;
+        overflow: hidden;
+    }
+
+    .aboutimg{
+        width:200px !important;
+    }
+}
